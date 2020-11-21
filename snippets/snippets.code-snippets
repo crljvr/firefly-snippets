@@ -1,0 +1,65 @@
+{
+  "FireflyProvider": {
+    "prefix": "ffp",
+    "body": [
+      "FireflyProvider(",
+      " instance: ${1:Firestore instance},",
+      " modelbuilderList: [${2:List of FireflyDataBuilder}],",
+      " child: ${child},",
+      ");"
+    ],
+    "description": "FireflyProvider widget"
+  },
+  "FireflyDataBuilder": {
+    "prefix": "ffdb",
+    "body": [
+      "FireflyDataBuilder(",
+      " model: ${1:Model},",
+      " builder: (json) => ${1:Model}.fromJson(json),",
+      ")"
+    ],
+    "description": "FireflyDataBuilder"
+  },
+  "Firefly listBuilder": {
+    "prefix": "fflb",
+    "body": [
+      "Firefly<${1:Model}>(",
+      "  collection: '${2:Collection}',",
+      "  listBuilder: (context, state, index) {${3}},",
+      "),"
+    ],
+    "description": "Firefly widget with listBuilder"
+  },
+  "Firefly listBuilder with Query": {
+    "prefix": "fflbq",
+    "body": [
+      "Firefly<${1:Model}>(",
+      "  collection: '${2:Collection}',",
+      "  query: Query(${3:key}).${4:Method}",
+      "  listBuilder: (context, state, index) {${5}},",
+      "),"
+    ],
+    "description": "Firefly widget with listBuilder and query"
+  },
+  "Firefly builder": {
+    "prefix": "ffb",
+    "body": [
+      "Firefly<${1:Model}>(",
+      "  collection: '${2:Collection}',",
+      "  builder: (context, state) {${3}},",
+      "),"
+    ],
+    "description": "Firefly widget with builder"
+  },
+  "Firefly builder with Query": {
+    "prefix": "ffbq",
+    "body": [
+      "Firefly<${1:Model}>(",
+      "  collection: '${2:Collection}',",
+      "  query: Query(${3:key}).${4:Method}",
+      "  builder: (context, state) {${5}},",
+      "),"
+    ],
+    "description": "Firefly widget with builder and query"
+  },
+}
