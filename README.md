@@ -4,6 +4,6 @@
 
 ---
 
-#Firefly snippets
+# Firefly snippets
 
 This extension provides you snippets for the [Firefly]() [Flutter](https://flutter.dev) package. 
