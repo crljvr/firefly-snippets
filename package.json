@@ -3,7 +3,7 @@
     "displayName": "Firefly snippets",
     "description": "Snippets for Flutter Firefly package",
     "version": "0.1.0",
-    "publisher": "carljover",
+    "publisher": "crljvr",
     "icon": "images/firefly-snippets-logo.png",
     "engines": {
         "vscode": "^1.51.0"
@@ -26,6 +26,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com:carljover/Firefly-snippets.git"
+        "url": "https://github.com/crljvr/firefly-snippets.git"
     }
 }
